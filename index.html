@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rattan Sales Corporation</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #d3e8ff;
+            color: #000;
+            padding: 1rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 100px;
+            height: auto;
+        }
+        .nav-item a {
+            color: #000 !important;
+        }
+        .container {
+            margin-top: 2rem;
+        }
+        .product-section {
+            margin-top: 2rem;
+        }
+        .product img {
+            max-height: 400px;
+            width: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+        }
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+        }
+        .contact {
+            background-color: #fff;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        footer {
+            background-color: #d3e8ff;
+            color: #000;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Company Logo">
+    <h1>Rattan Sales Corporation</h1>
+    <p>Manufacturer of Mortuary Cabinets & Medical Refrigerators</p>
+</header>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#products">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container" id="home">
+    <section id="products" class="product-section">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="product text-center">
+                    <h2>Mortuary Cabinets</h2>
+                    <img src="M1.png" alt="Mortuary Cabinets Image">
+                    <p><strong>Custom Capacity/Temperature Available on Demand</strong></p>
+                    <p>Spencers Mortuary cabinets are quality constructed self-contained mortuary refrigerators used in funeral directors & Hospitals...</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#mortuaryModal">Read More</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product text-center">
+                    <h2>Medical Refrigerators</h2>
+                    <img src="MR1.png" alt="Medical Refrigerators Image">
+                    <p><strong>Custom Capacity/Temperature Available on Demand</strong></p>
+                    <p>Spencers Medical Refrigerators have been designed in response to the precise requirement for preserving Temperature sensitive products...</p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#refrigeratorModal">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Manufacturer & Distributor:</strong> Rattan Sales Corporation</p>
+        <p><strong>Admin Office:</strong> 718 Jaina Tower-1, District Center, Janakpuri, New Delhi-110058.</p>
+        <p><strong>Corp Office:</strong> “Rattan House”, Model Basti Industrial Area, New Delhi-110005.</p>
+        <p><strong>Production Unit:</strong> 85, HSIDC, Industrial Estate, Barhi (Haryana)</p>
+        <p><strong>Phone:</strong> +91-011-25508884, +91-011-23628547, Fax: 011-25542032.</p>
+        <p><strong>Cell No:</strong> +91-9810110128, +91-9910333888.</p>
+        <p><strong>Email:</strong> <a href="mailto:info@freezersindia.com">info@freezersindia.com</a>; </p>
+        <p><strong>USA Distributor:</strong> MediQuip World LLC, 916 Grand Blvd, Westbury, NY, 11590</p>
+        <p><strong>Cell No:</strong> +1-408-659-9315, +1-516-410-9871</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Rattan Sales Corporation. All rights reserved.</p>
+</footer>
+
+<!-- Mortuary Modal -->
+<div class="modal fade" id="mortuaryModal" tabindex="-1" role="dialog" aria-labelledby="mortuaryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mortuaryModalLabel">Mortuary Cabinets</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Mortuary Cabinets Details with Images -->
+        <p><strong>Custom Capacity/Temperature Available on Demand</strong></p>
+        <p>Spencers Mortuary cabinets are quality constructed self-contained mortuary refrigerators used in funeral directors & Hospitals. SPENCERS body storage cabinets have been specially designed to offer an extremely compact and cost effective solution to the exact hygiene requirements demanded by current legislation.</p>
+        <img src="M2.png" alt="Mortuary Cabinet Image" style="width: 50%; height: auto;">
+        <p>Built with top grade materials added to finest levels of quality construction and reliability. SPENCERS Mortuary freezers are designed to fit your space and to meet your cadaver storage needs for both short & long time periods. A vast range of styles and designs are available tailored to your own requirements.</p>
+        <img src="M3.png" alt="Mortuary Cabinet Image" style="width: 50%; height: auto;">
+        <p><strong>Exclusive Standards:</strong></p>
+        <ul>
+            <li>Customized styles & Design.</li>
+            <li>Dependability, low maintenance & Value.</li>
+            <li>Accurate temperature control and holdover capability.</li>
+            <li>Excellent temperature stability and homogeneity.</li>
+            <li>Spencers superior refrigeration system.</li>
+        </ul>
+        <img src="M4.png" alt="Mortuary Cabinet Image" style="width: 50%; height: auto;">
+        <p><strong>Robust Features:</strong></p>
+        <ul>
+            <li>Microprocessor based temperature control system.</li>
+            <li>Microprocessor based digital display.</li>
+            <li>Audio-visual High & low temperature alarms.</li>
+            <li>Interior vapor proof fluorescent lighting.</li>
+        </ul>
+        <img src="M5.png" alt="Mortuary Cabinet Image" style="width: 50%; height: auto;">
+        <p><strong>Capacity & Temperature:</strong></p>
+        <ul>
+            <li>Nine Body Storage Capacity.</li>
+            <li>+2 °C to +8 °C</li>
+        </ul>
+        <img src="M6.png" alt="Mortuary Cabinet Image" style="width: 50%; height: auto;">
+        <p><strong>Capacity & Temperature Selections:</strong></p>
+        <ul>
+            <li>Custom made body storage Capacity as per requirements</li>
+            <li>Various temperature range as per requirements</li>
+        </ul>
+        <p><strong>Feature Selections (Optional):</strong></p>
+        <ul>
+            <li>Body Lifting cum Transport trolley.</li>
+            <li>Back up refrigeration system</li>
+            <li>Voltage safety system (Servo Stabilizer)</li>
+            <li>Rechargeable battery backup for control panel.</li>
+            <li>Rechargeable battery backup for alarm system</li>
+            <li>TFT touch screen based temperature control, monitoring & recording system with temperature data records (365 days data recording) in tabular & graphical formats on screen. USB (pen drive) & PC interface for data download. Optional printer port for temperature data print.</li>
+        </ul>
+        <p><strong>Construction Selections:</strong></p>
+        <ul>
+            <li>Pre-assembled/Modular ready to plug & operate.</li>
+            <li>Pre-fabricated panels & units ready to install & operate.</li>
+        </ul>
+        <p><strong>Features:</strong></p>
+        <p>Cabinet Construction: SPENCERS maintains finest levels of quality construction designed detail by detail to meet your most exact requirements. The cabinet construction is so beautifully planned to meet the most complex service space & minimum room length requirements. Available in pre-assembled modular construction</p>
+        <p>Outer: Outer is made of Galvanized Sheet of suitable thickness & grade finished with bacteria resistant coating.</p>
+        <p>Interior: Durable Stainless Steel (SS-304) interiors to give better life and makes cleaning easy providing hygienic conditions and great sturdiness.</p>
+        <p>Insulation: Safe, high density, non-settling & Thick polyurethane insulation of 80 mm.</p>
+        <p>Doors: Standard hinged doors for individual cells with easy grip handle.</p>
+        <p>Floor & Frame: Recessed Floor & superior engineered frame.</p>
+        <p>Racks & Trays: Sturdy built in SS framed Rack system with railings for easy movement of SS trays with castors constructed for heavy duty use.</p>
+        <p>Castors: Dual heavy duty castors for easy movement of the mortuary cabinet.</p>
+        <p>Refrigeration: Strong and reliable with powerful quick response refrigeration which runs on demand, an exclusive long life SPENCERS superior refrigeration process is a unique feature of SPENCERS Mortuary freezers. Salient features include: Heavy duty Air-cooled compressor. Highly efficient air-cooled finned condenser with automatic condensate evaporating system. Internal evaporator system. Non-CFC/non-HCFC environmental friendly refrigerant. Forced air circulation maintains chamber uniformity.</p>
+        <p>Temperature Control: The unit is fitted with a micro-processor based digital electronic temperature controller cum indicator for easy readability along with audible alarm system. The electronic management system allows setting the temperature as required as per the standard temperature range of the Mortuary cabinet.</p>
+        <p>Alarms: In Built High & Low temperature alarms are usually incorporated in all the models of SPENCERS Mortuary Freezers.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Refrigerator Modal -->
+<div class="modal fade" id="refrigeratorModal" tabindex="-1" role="dialog" aria-labelledby="refrigeratorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="refrigeratorModalLabel">Medical Refrigerators</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Medical Refrigerators Details with Images -->
+        <p><strong>Custom Capacity/Temperature Available on Demand</strong></p>
+        <p>Spencers Medical Refrigerators have been designed in response to the precise requirement for preserving Temperature sensitive products. These refrigerators provide an ideal cold storage environment for the preservation of vaccines, medicines, reagents, specimens etc. For consistent, reliable protection, storage & preservation of valuable Laboratory products at a safe + 2 to +8 Deg. C, you can depend on SPENCERS Medical refrigerators where temperature is constantly maintained at the set temperature, with better uniformity and accuracy.</p>
+        <img src="MR2.png" alt="Medical Refrigerator Image" style="width: 50%; height: auto;">
+        <p><strong>Capacity & Temperature:</strong></p>
+        <ul>
+            <li>1000 Liters</li>
+            <li>+2 °C to +8 °C</li>
+        </ul>
+        <img src="MR3.png" alt="Medical Refrigerator Image" style="width: 50%; height: auto;">
+        <p><strong>Exclusive Standards:</strong></p>
+        <ul>
+            <li>Digital LED/LCD display of set & process temperature.</li>
+            <li>Micro-processor based digital temperature control system.</li>
+            <li>Audio-visual high & low temperature alarms.</li>
+            <li>Accurate temperature control and holdover capability.</li>
+            <li>Excellent temperature stability and homogeneity.</li>
+            <li>Spencers superior refrigeration system.</li>
+        </ul>
+        <img src="MR4.png" alt="Medical Refrigerator Image" style="width: 50%; height: auto;">
+        <p><strong>Feature Selections (Optional):</strong></p>
+        <ul>
+            <li>Body Lifting cum Transport trolley.</li>
+            <li>Back up refrigeration system</li>
+            <li>Voltage safety system (Servo Stabilizer)</li>
+            <li>Rechargeable battery backup for control panel.</li>
+            <li>Rechargeable battery backup for alarm system</li>
+            <li>Data access port.</li>
+            <li>USB based data logger</li>
+            <li>TFT touch screen based temperature control, monitoring & recording system with temperature data records (365 days data recording) in tabular & graphical formats on screen. USB (pen drive) & PC interface for data download. Optional printer port for temperature data print.</li>
+        </ul>
+        <img src="MR5.png" alt="Medical Refrigerator Image" style="width: 50%; height: auto;">
+        <p><strong>Features:</strong></p>
+        <p>Cabinet Construction: SPENCERS maintains finest levels of quality construction designed detail by detail to meet your most exact requirements. The cabinet construction is so beautifully planned to meet the most complex service space & minimum room length requirements</p>
+        <p>Outer: Outer is made of Galvanized Sheet of suitable thickness & grade finished with bacteria resistant coating.</p>
+        <p>Interior: Durable Stainless Steel (SS-304) interiors to give better life and makes cleaning easy providing hygienic conditions and great sturdiness.</p>
+        <p>Insulation: Safe, high density, non-settling & Thick polyurethane insulation of 80 mm.</p>
+        <p>Doors: Standard hinged doors for individual cells with easy grip handle.</p>
+        <p>Floor & Frame: Recessed Floor & superior engineered frame.</p>
+        <p>Racks & Trays: Sturdy built in SS framed Rack system with railings for easy movement of SS trays with castors constructed for heavy duty use.</p>
+        <p>Castors: Dual heavy duty castors for easy movement of the mortuary cabinet.</p>
+        <p>Refrigeration: Strong and reliable with powerful quick response refrigeration which runs on demand, an exclusive long life SPENCERS superior refrigeration process is a unique feature of SPENCERS Medical Refrigerators. Salient features include: Heavy duty Air-cooled compressor. Highly efficient air-cooled finned condenser with automatic condensate evaporating system. Internal evaporator system. Non-CFC/non-HCFC environmental friendly refrigerant. Forced air circulation maintains chamber uniformity.</p>
+        <p>Temperature Control: The unit is fitted with a micro-processor based digital electronic temperature controller cum indicator for easy readability along with audible alarm system. The electronic management system allows setting the temperature as required as per the standard temperature range of the Refrigerators</p>
+        <p>Alarms: In Built High & Low temperature alarms are usually incorporated in all the models of SPENCERS Medical Refrigerators.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
